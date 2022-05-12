@@ -1,0 +1,264 @@
+/* FONTS */
+
+@font-face {
+    font-family: bosch;
+    src: url(fonts/Bosch.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+/* END FONTS */
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    /* width: 100vw; */
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    height: 100%;
+    width: 80px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2e471d;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar h1 {
+    font-size: 2rem;
+    color: #f5dc9f;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: rotate(-180deg) translateY(50%) translateX(50%);
+    font-family: 'Bosch', sans-serif;
+}
+
+.sidebar .logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.socials img {
+    /* position: fixed; */
+    bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.socials {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    margin-bottom: 45px;
+}
+
+/* END SOCIALS */
+
+
+/* MAIN */
+.background {
+    z-index: 0;
+
+    /* background-color: #f5dc9f; */
+}
+
+.main {
+    margin-left: 80px;
+    /* padding: 0px 10px; */
+    background-color: #f5dc9f;
+    height: 100vh;
+}
+
+.main h1 {
+    font-family: 'Bosch', sans-serif;
+    font-size: 6rem;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+/* END MAIN */
+
+footer {
+    /* margin-left: 80px; */
+    background-color: #2e471d;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 150px;
+    color: white;
+}
+
+.footercontent {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translte(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.footercontent a {
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    /* border: 1px solid white; */
+
+}
+
+.bottomnav {
+    margin: 20px;
+}
+
+p {
+    margin-top: 10px;
+}
+
+p,
+.footercontent a {
+    font-family: 'Questrial', sans-serif;
+}
+
+.mobilenav {
+    display: none;
+}
+
+.left {
+    float: left;
+    width: 60%;
+    padding: 10px;
+    height: 300px;
+}
+
+.right {
+    padding-left: 95px;
+    float: left;
+    width: 35%;
+    padding: 10px;
+    height: 300px;
+}
+
+.vl {
+    float: left;
+    height: 600px;
+    width: 5px;
+    margin-right: 2px;
+    /* edit this if you want */
+    background-color: black;
+}
+
+.row {
+    margin-left: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    footer {
+        visibility: hidden;
+    }
+
+    .main h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .sidebar {
+        visibility: hidden;
+    }
+
+    .main {
+        margin-left: -80px;
+        background-color: #f5dc9f;
+        height: 100vh;
+    }
+
+    .mobilenav {
+        display: block;
+    }
+
+    .topnav {
+        overflow: hidden;
+        background-color: #f5dc9f;
+        position: relative;
+        padding: 10px;
+    }
+
+    .topnav #myLinks {
+        display: none;
+    }
+
+    .topnav a {
+        color: black;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: 'Bosch';
+        /* display: block; */
+    }
+
+    .topnav img {
+        position: absolute;
+        right: 0;
+        margin-right: 5px;
+    }
+
+    .active {
+        background-color: #f5dc9f;
+        color: white;
+    }
+
+    .vl {
+        display: none;
+        text-align: center;
+    }
+
+    .left {
+        padding: 10px;
+        width: 80%;
+        /* text-align: center; */
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 65px;
+
+    }
+
+    .row {
+        /* margin-left: -20px; */
+    }
+
+    .right {
+        /* width: 100%; */
+        padding: 10px;
+        width: 80%;
+        /* text-align: center; */
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 65px;
+    }
+
+
+}
