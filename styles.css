@@ -102,13 +102,10 @@ body {
     display: block;
   }
   
-  
   .tabs {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
       display: flex;
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -117,21 +114,18 @@ body {
     width: 405px;
       text-align: center;
       background: #f5dc9f;
-      border-right: 1px solid #201801;
+      border: 2px solid #201801;
       padding: 20px px;
       cursor: pointer;
         border-top-left-radius: 25px;
       border-bottom-left-radius: 25px;
-        border-right: 0px;
       border-top-right-radius: 25px;
       border-bottom-right-radius: 25px;
-  
   }
   
   .tab {
     cursor: pointer;
-    padding: 20px;
-    
+    padding: 20px;  
   }
   
   .tab-content {
