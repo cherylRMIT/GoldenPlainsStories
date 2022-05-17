@@ -1,0 +1,18 @@
+/* Purpose: styling components */
+
+/* DESKTOP COMPONENTS */
+/* buttons */
+.button {
+    padding: 16px 24px;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/* MOBILE COMPONENTS */
+@media screen and (max-width: 375px) {
+    /* buttons */
+    .button {
+        padding: 8px 16px;
+    }
+
+}
