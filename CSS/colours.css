@@ -1,0 +1,87 @@
+/* Purpose: colours for elements (NOTE: all colours will be the same across desktop and mobile */
+
+/*
+Colour HEX Values
+- brown: #201801
+- green:#2E471D
+- yellow: #F5DC9F
+- blue: #CFEAFD
+*/
+
+/* LIGHT BACKGROUND*/
+.lightBG{
+    background-color: #F5DC9F;
+    color: #201801;
+}
+
+/* unvisited link */
+a.lightLink:link {
+    color: #201801;
+}
+
+/* visited link */
+a.lightLink:visited {
+    color: #201801;
+}
+
+/* mouse over link */
+a.lightLink:hover {
+    color: #2E471D;
+}
+
+/* selected link */
+a.lightLink:active {
+    color: #2E471D;
+}
+
+/* buttons */
+.lightPrimaryButton {
+    background-color: #201801;
+    color:white;
+    mix-blend-mode: darken; /* makes text see-through */
+}
+
+.lightSecondaryButton {
+    border: 4px solid #201801;
+    color: #201801;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/* DARK BACKGROUND */
+.darkBG{
+    background-color: #201801;
+    color: #F5DC9F;
+}
+
+/* unvisited link */
+a.darkLink:link {
+    color: #F5DC9F;
+}
+
+/* visited link */
+a.darkLink:visited {
+    color: #F5DC9F;
+}
+
+/* mouse over link */
+a.darkLink:hover {
+    color: #CFEAFD;
+}
+
+/* selected link */
+a.darkLink:active {
+    color: #CFEAFD;
+}
+
+/* buttons */
+.darkPrimaryButton {
+    background-color: #F5DC9F;
+    color:black;
+    mix-blend-mode: lighten; /* makes text see-through */
+}
+
+.darkSecondaryButton {
+    border: 2px solid #F5DC9F;
+    color: #F5DC9F;
+}

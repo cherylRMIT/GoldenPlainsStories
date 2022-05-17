@@ -1,0 +1,27 @@
+/* Purpose: grid and margin layouts for desktop and mobile */
+
+/* Grid Guide: https://css-tricks.com/snippets/css/complete-guide-grid/ */
+
+/* DESKTOP GRID */
+body {
+    margin: 0px 64px 0px 160px;
+}
+
+.button {
+    padding: 16px 32px;
+    border-radius: 32px;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/* MOBILE GRID */
+@media screen and (max-width: 375px) {
+    body {
+        margin: 16px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        border-radius: 16px;
+    }
+}
