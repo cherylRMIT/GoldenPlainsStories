@@ -1,3 +1,5 @@
+//slider images//
+
 const slider = document.getElementById('before-after-slider');
 const before = document.getElementById('before-image');
 const beforeImage = before.getElementsByTagName('img')[0];
