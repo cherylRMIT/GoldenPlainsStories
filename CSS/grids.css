@@ -24,7 +24,7 @@ body {
     color: #F5DC9F;
     text-align: center;
     line-height: 50vh;
-    padding: 64px 0px;
+    padding: 10vh 0vh;
 }
 
 .splash.display-none {
@@ -39,7 +39,7 @@ body {
     color: #F5DC9F;
     text-align: center;
     line-height: 50vh;
-    padding: 64px 0px;
+    padding: 10vh 0vh;
     transition: all 0.5s; /* smooth fade out */
 }
 
@@ -47,7 +47,7 @@ body {
     padding: 0vw 10vw;
 }
 .splash img {
-    width: 75vw;
+    width: 50vw;
 }
 
 @keyframes fadeIn { /* keyframe animation for fading in elemnts */
@@ -61,6 +61,57 @@ body {
     animation: fadeIn 1s ease-in forwards; /* fade in element and retain final animation keyframe */
 }
 
+/* SIDEBAR */
+
+.sidebar {
+    height: 100%;
+    width: 96px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2e471d;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar .middle {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.middle img {
+    width: 100%;
+}
+
+.sidebar .logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 80%;
+}
+
+.socials img {
+    bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.socials {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    margin-bottom: 45px;
+}
+
+/* END SOCIALS */
 
 /*-----------------------------------------------------------------------------------------------*/
 
