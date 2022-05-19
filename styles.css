@@ -91,6 +91,8 @@ body {
     padding-left: 30px;
 }
 
+
+
 /* END MAIN */
 
 /* MODULAR TABS */
@@ -150,9 +152,10 @@ body {
 .img-comp-container {
     /*adjustments for images and border*/
     position: relative;
-    height: 200px; 
-    width: 300px;
+    height: 500px; 
+    width: 600px;
     border: 2px solid black;
+    
     
   }
   
