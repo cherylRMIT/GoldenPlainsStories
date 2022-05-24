@@ -3,7 +3,7 @@
 /* IMPORTING FONTS */
 @font-face {
     font-family: Bosch;
-    src: url(../Bosch-Display-Font/OTF-File/Bosch.otf);
+    src: url(../Bosch-Display-Font/OTF-File/Bosch.woff);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Nanum+Myeongjo:wght@700&display=swap');
@@ -13,13 +13,13 @@
 h1 {
     font-family: 'Bosch', 'Nanum Myeongjo', serif;
     font-size: 11.089rem;
-    line-height: 104px;
+    line-height: 100%;
 }
 
-h2 {
+h2, .dropdown-btn {
     font-family: 'Bosch', 'Nanum Myeongjo', serif;
     font-size: 6.854rem;
-    line-height: 104px;
+    line-height: 100%;
 }
 
 h3 {
@@ -57,6 +57,10 @@ a {
     line-height: 24px;
 }
 
+.navLink {
+    text-decoration: none;
+}
+
 .button {
     font-family: 'DM Sans', sans-serif;
     font-size: 1rem;
@@ -83,7 +87,7 @@ a {
         line-height: 48px;
     }
     
-    h2 {
+    h2, .dropdown-btn {
         font-family: 'Bosch', 'Nanum Myeongjo', serif;
         font-size: 2.44rem;
         line-height: 40px;
