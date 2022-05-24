@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', (e)=>{ // adds an event listener t
     }, 5000)
 })
 
+// navigation drop down menu
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
@@ -18,3 +19,4 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
