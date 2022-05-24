@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="./CSS/fonts.css">
     <link rel="stylesheet" href="./CSS/colours.css">
     <link rel="stylesheet" href="./CSS/grids.css">
@@ -13,7 +13,7 @@
     <title>The Golden Plains Shire</title>
 </head>
 
-<body>
+<body class="fade-in lightBG">
     <div class="navBar">
         <div class="logo">
             <a href="./index.html"><img src="./Images/GPS_LogoBookIcon.svg" alt=""></a>
@@ -65,6 +65,44 @@
         </div>
     </div>
 
+    <div class="container">
+        <div id="before-after-slider">
+          <div id="before-image">
+            <img src="img/bridge.jpeg" alt="before"/>
+          </div>
+        
+          <div id="after-image">
+            <img src="img/closeup.JPG" alt="After"/>
+          </div>
+      
+          <div id="resizer"><img src="img/arrowicon.png" alt="icon"></div>
+        
+       </div>
+      </div>
+    
+
+
+    <ul class="tabs">
+        <li data-tab-target="#agriculture" class="active tab">Agriculture</li>
+        <li data-tab-target="#Language" class="tab">Language</li>
+        <li data-tab-target="#food" class="tab">Food</li>
+    </ul>
+      
+    <div class="tab-content">
+        <div id="agriculture" data-tab-content class="active">
+          <h1>Agriculture</h1>
+          <p>Agricture on indigenous land</p>
+        </div>
+        <div id="Language" data-tab-content>
+          <h1>Language</h1>
+          <p>Language in indigenous culture</p>
+        </div>
+        <div id="food" data-tab-content>
+          <h1>Food</h1>
+          <p>Food in indigenous culture</p>
+        </div>
+    </div>
+
     <footer>
         <div class="links">
             <div class="sitemap">
@@ -75,8 +113,8 @@
                 <a href="#home">About</a>
             </div>
             <div class="socials">
-                <a href="https://www.facebook.com/" target=”_blank”><img class="icon" src="./Images/Icons/facebook_YellowOutline.svg" alt=""></a>
-                <a href="https://www.instagram.com/?hl=en" target=”_blank”><img class="icon" src="./Images/Icons/instagram_YellowOutline.svg" alt=""></a>
+                <a href="https://www.facebook.com/" target=”_blank”><img class="icon" src="./Images/Icons/facebook_BrownOutline.svg" alt=""></a>
+                <a href="https://www.instagram.com/?hl=en" target=”_blank”><img class="icon" src="./Images/Icons/instagram_BrownOutline.svg" alt=""></a>
             </div>
         </div>
         <p>© Golden Plains Shire 2022</p>

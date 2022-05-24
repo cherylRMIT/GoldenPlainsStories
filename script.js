@@ -19,6 +19,7 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
+
 //slider images//
 
 const slider = document.getElementById('before-after-slider');
