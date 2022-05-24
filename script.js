@@ -1,77 +1,60 @@
-//slider images//
+/*IMAGE SLIDER SCRIPT*/
 
-const slider = document.getElementById('before-after-slider');
-const before = document.getElementById('before-image');
-const beforeImage = before.getElementsByTagName('img')[0];
-const resizer = document.getElementById('resizer');
-
-let active = false;
-
-document.addEventListener("DOMContentLoaded", function() {
-  let width = slider.offsetWidth;
-  console.log(width);
-  beforeImage.style.width = width + 'px';
-});
-
-window.addEventListener('resize', function() {
-  let width = slider.offsetWidth;
-  console.log(width);
-  beforeImage.style.width = width + 'px';
-})
-
-resizer.addEventListener('mousedown',function(){
-  active = true;
- resizer.classList.add('resize');
-
-});
-
-document.body.addEventListener('mouseup',function(){
-  active = false;
- resizer.classList.remove('resize');
-});
-
-document.body.addEventListener('mouseleave', function() {
-  active = false;
-  resizer.classList.remove('resize');
-});
-
-document.body.addEventListener('mousemove',function(e){
-  if (!active) return;
-  let x = e.pageX;
-  x -= slider.getBoundingClientRect().left;
-  slideIt(x);
-  pauseEvent(e);
-});
-
-resizer.addEventListener('touchstart',function(){
-  active = true;
-  resizer.classList.add('resize');
-});
-
-document.body.addEventListener('touchend',function(){
-  active = false;
-  resizer.classList.remove('resize');
-});
-
-document.body.addEventListener('touchcancel',function(){
-  active = false;
-  resizer.classList.remove('resize');
-});
-
-document.body.addEventListener('touchmove',function(e){
-  if (!active) return;
-  let x;
-  
-  let i;
-  for (i=0; i < e.changedTouches.length; i++) {
-  x = e.changedTouches[i].pageX; 
+function initComparisons() {
+  var x, i;
+  x = document.getElementsByClassName("img-comp-overlay");
+  for (i = 0; i < x.length; i++) {
+    compareImages(x[i]);
   }
-  
-  x -= slider.getBoundingClientRect().left;
-  slideIt(x);
-  pauseEvent(e);
-});
+  function compareImages(img) {
+    var slider, img, clicked = 0, w, h;
+    w = img.offsetWidth;
+    h = img.offsetHeight;
+    img.style.width = (w / 2) + "px";
 
+    /*SCRIPT FOR SLIDER*/
+    slider = document.createElement("DIV");
+    slider.setAttribute("class", "img-comp-slider");
+    img.parentElement.insertBefore(slider, img);
+    slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+    slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+    slider.addEventListener("mousedown", slideReady);
+    window.addEventListener("mouseup", slideFinish);
+    slider.addEventListener("touchstart", slideReady);
+    window.addEventListener("touchend", slideFinish);
+    function slideReady(e) {
+      e.preventDefault();
+      clicked = 1;
+      window.addEventListener("mousemove", slideMove);
+      window.addEventListener("touchmove", slideMove);
+    }
+    function slideFinish() {
+      clicked = 0;
+    }
+    function slideMove(e) {
+      var pos;
+      if (clicked == 0) return false;
+      pos = getCursorPos(e)
+      if (pos < 0) pos = 0;
+      if (pos > w) pos = w;
+      slide(pos);
+    }
+    function getCursorPos(e) {
+      var a, x = 0;
+      e = (e.changedTouches) ? e.changedTouches[0] : e;
+      a = img.getBoundingClientRect();
+      x = e.pageX - a.left;
+      x = x - window.pageXOffset;
+      return x;
+    }
+    function slide(x) {
+      img.style.width = x + "px";
+      slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+    }
+  }
+};
+
+initComparisons();
 function slideIt(x){
     let transform = Math.max(0,(Math.min(x,slider.offsetWidth)));
     before.style.width = transform+"px";
@@ -90,19 +73,16 @@ function pauseEvent(e){
 
 //tabs 
 
-const tabs = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
-
-tabs.forEach(tab => {
+document.querySelectorAll('[data-tab-target]').forEach(tab => {
   tab.addEventListener('click', () => {
     const target = document.querySelector(tab.dataset.tabTarget)
-    tabContents.forEach(tabContent => {
+    document.querySelectorAll('[data-tab-content]').forEach(tabContent => {
       tabContent.classList.remove('active')
     })
-    tabs.forEach(tab => {
+    document.querySelectorAll('[data-tab-target]').forEach(tab => {
       tab.classList.remove('active')
     })
     tab.classList.add('active')
     target.classList.add('active')
   })
-})
+});
