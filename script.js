@@ -88,7 +88,7 @@ function pauseEvent(e){
 
 
 
-//tabs 
+/*tabs*/
 
 const tabs = document.querySelectorAll('[data-tab-target]')
 const tabContents = document.querySelectorAll('[data-tab-content]')
@@ -106,3 +106,4 @@ tabs.forEach(tab => {
     target.classList.add('active')
   })
 })
+
