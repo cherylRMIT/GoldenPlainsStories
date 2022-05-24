@@ -1,25 +1,3 @@
-document.addEventListener('DOMContentLoaded', (e)=>{ // adds an event listener that returns when all DOM elements are loaded, used for fade out for the splash screen
-    setTimeout(()=>{ // function to return after 5 seconds
-        document.querySelector(".splash").classList.add('display-none'); // adds the display-none class to the splash div to fade out
-    }, 5000)
-})
-
-// navigation drop down menu
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
-
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
-
 //slider images//
 
 const slider = document.getElementById('before-after-slider');
@@ -39,7 +17,7 @@ window.addEventListener('resize', function() {
   let width = slider.offsetWidth;
   console.log(width);
   beforeImage.style.width = width + 'px';
-})
+});
 
 resizer.addEventListener('mousedown',function(){
   active = true;
@@ -98,7 +76,7 @@ function slideIt(x){
     let transform = Math.max(0,(Math.min(x,slider.offsetWidth)));
     before.style.width = transform+"px";
     resizer.style.left = transform-0+"px";
-}
+};
 
 function pauseEvent(e){
     if(e.stopPropagation) e.stopPropagation();
@@ -106,14 +84,14 @@ function pauseEvent(e){
     e.cancelBubble=true;
     e.returnValue=false;
     return false;
-}
+};
 
 
 
 //tabs 
 
-const tabs = document.querySelectorAll('[data-tab-target]')
-const tabContents = document.querySelectorAll('[data-tab-content]')
+const tabs = document.querySelectorAll('[data-tab-target]');
+const tabContents = document.querySelectorAll('[data-tab-content]');
 
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
@@ -127,4 +105,4 @@ tabs.forEach(tab => {
     tab.classList.add('active')
     target.classList.add('active')
   })
-})
+});
