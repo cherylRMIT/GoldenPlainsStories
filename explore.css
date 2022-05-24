@@ -159,4 +159,11 @@ ul a {
 
 ul a:visited {
     color: black;
+<<<<<<< Updated upstream
+=======
+}
+
+.right {
+    /* margin-top: -2rem; */
+>>>>>>> Stashed changes
 }

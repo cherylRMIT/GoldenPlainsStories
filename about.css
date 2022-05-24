@@ -1,0 +1,46 @@
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.column {
+    width: 45%;
+    float: left;
+    padding: 10px;
+}
+
+.column .button {
+    width: 100%;
+    border-radius: 100px;
+    color: #CFEAFD;
+    background-color: #201801;
+    /* height: 1rem; */
+    text-align: center;
+}
+
+.column .button:hover {
+    cursor: pointer;
+}
+
+footer {
+    position: relative;
+
+}
+
+.left img {
+    margin-top: 20rem;
+    margin-bottom: -70rem;
+}
+
+.right h2 {
+    width: 100%;
+    margin-top: -20px;
+    text-align: center;
+    justify-content: middle;
+}
+
+.right img {
+    margin-top: 20px;
+    height: 35rem;
+}
