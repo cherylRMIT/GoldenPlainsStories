@@ -14,9 +14,30 @@ Colour HEX Values
     color: #201801;
 }
 
+.lightBG h1 {
+    color:#2E471D;
+}
+
+.lightBG h2 {
+    color:#2E471D;
+}
+
+.lightBG h3 {
+    color:#2E471D;
+}
+
+.lightBG h4 {
+    color:#2E471D;
+}
+
+.lightBG h5 {
+    color:#2E471D;
+}
+
 /* unvisited link */
 a.lightLink:link {
     color: #201801;
+    transition: background-color 0.5s ease-out 50ms /* smooth transition for hover animation */
 }
 
 /* visited link */
@@ -34,16 +55,36 @@ a.lightLink:active {
     color: #2E471D;
 }
 
+.navLink h2, .dropdown-btn {
+    color: #201801;
+    transition: background-color 0.5s ease-out 50ms /* smooth transition for hover animation */
+}
+
+.navLink h2:hover, .dropdown-btn:hover {
+    color: #2E471D;
+}
+
 /* buttons */
 .lightPrimaryButton {
     background-color: #201801;
     color:white;
     mix-blend-mode: darken; /* makes text see-through */
+    transition: background-color 0.5s ease-out 50ms /* smooth transition for hover animation */
+}
+
+.lightPrimaryButton:hover {
+    background-color: #2E471D;
 }
 
 .lightSecondaryButton {
     border: 4px solid #201801;
     color: #201801;
+    transition: background-color 0.5s ease-out 50ms /* smooth transition for hover animation */
+}
+
+.lightSecondaryButton:hover {
+    border: 4px solid #2E471D;
+    color: #2E471D;
 }
 
 /*-----------------------------------------------------------------------------------------------*/
@@ -54,9 +95,31 @@ a.lightLink:active {
     color: #F5DC9F;
 }
 
+
+.darkBG h1 {
+    color: #CFEAFD;
+}
+
+.darkBG h2 {
+    color: #CFEAFD;
+}
+
+.darkBG h3 {
+    color: #CFEAFD;
+}
+
+.darkBG h4 {
+    color: #CFEAFD;
+}
+
+.darkBG h5 {
+    color: #CFEAFD;
+}
+
 /* unvisited link */
 a.darkLink:link {
     color: #F5DC9F;
+    transition: background-color 0.5s ease-out 50ms /* smooth transition for hover animation */
 }
 
 /* visited link */
@@ -79,9 +142,20 @@ a.darkLink:active {
     background-color: #F5DC9F;
     color:black;
     mix-blend-mode: lighten; /* makes text see-through */
+    transition: background-color 0.5s ease-out 50ms /* smooth transition for hover animation */
+}
+
+.darkPrimaryButton:hover {
+    background-color: #CFEAFD;
 }
 
 .darkSecondaryButton {
-    border: 2px solid #F5DC9F;
+    border: 4px solid #F5DC9F;
     color: #F5DC9F;
+    transition: background-color 0.5s ease-out 50ms /* smooth transition for hover animation */
+}
+
+.darkSecondaryButton:hover {
+    border: 4px solid #CFEAFD;
+    color: #CFEAFD;
 }
