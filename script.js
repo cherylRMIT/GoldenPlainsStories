@@ -55,6 +55,19 @@ function initComparisons() {
 };
 
 initComparisons();
+function slideIt(x){
+    let transform = Math.max(0,(Math.min(x,slider.offsetWidth)));
+    before.style.width = transform+"px";
+    resizer.style.left = transform-0+"px";
+}
+
+function pauseEvent(e){
+    if(e.stopPropagation) e.stopPropagation();
+    if(e.preventDefault) e.preventDefault();
+    e.cancelBubble=true;
+    e.returnValue=false;
+    return false;
+}
 
 
 
