@@ -2,89 +2,9 @@
 body {
     margin: 0;
     padding: 0;
-    /* width: 100vw; */
 }
 
-/* SIDEBAR
-
-.sidebar {
-    height: 100%;
-    width: 80px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #2e471d;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
-.sidebar h1 {
-    font-size: 2rem;
-    color: #f5dc9f;
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: rotate(-180deg) translateY(50%) translateX(50%);
-    font-family: 'Bosch', sans-serif;
-}
-
-.sidebar .logo img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    width: 80%;
-}
-
-.socials img {
-    /* position: fixed; */
-    /* bottom: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10px;
-    width: 100%;
-}
-
-.socials {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0;
-    margin-bottom: 45px;
-}  */
-
-/* END SOCIALS */
-
-
-/* MAIN */
-.background {
-    z-index: 0;
-
-    /* background-color: #f5dc9f; */
-}
-
-.main {
-    margin-left: 80px;
-    /* padding: 0px 10px; */
-    background-color: #f5dc9f;
-    height: 100vh;
-}
-
-.main h1 {
-    font-family: 'Bosch', sans-serif;
-    font-size: 6rem;
-    padding-top: 30px;
-    padding-left: 30px;
-}
-
-/* END MAIN */
-
-footer {
-    /* margin-left: 80px; */
+/* footer {
     background-color: #2e471d;
     text-align: center;
     position: fixed;
@@ -109,25 +29,10 @@ footer {
     color: white;
     padding: 10px;
     border-radius: 5px;
-    /* border: 1px solid white; */
-
-}
+} */
 
 .bottomnav {
     margin: 20px;
-}
-
-p {
-    margin-top: 10px;
-}
-
-p,
-.footercontent a {
-    font-family: 'Questrial', sans-serif;
-}
-
-.mobilenav {
-    display: none;
 }
 
 .left {
@@ -165,10 +70,7 @@ p,
 }
 
 
-@media screen and (max-width: 600px) {
-    footer {
-        visibility: hidden;
-    }
+@media screen and (max-width: 375px) {
 
     .main h1 {
         font-size: 2.5rem;
@@ -176,9 +78,9 @@ p,
         margin-left: 50px;
     }
 
-    .sidebar {
+    /* .sidebar {
         visibility: hidden;
-    }
+    } */
 
     .main {
         margin-left: -80px;
@@ -186,9 +88,6 @@ p,
         height: 100vh;
     }
 
-    .mobilenav {
-        display: block;
-    }
 
     .topnav {
         overflow: hidden;
