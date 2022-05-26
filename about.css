@@ -29,8 +29,18 @@ footer {
 }
 
 .left img {
-    margin-top: 20rem;
-    margin-bottom: -70rem;
+    margin-top: 2rem;
+    /* margin-bottom: -70rem; */
+    max-width: 100%;
+}
+
+.left .button {
+    margin-top: 1rem;
+}
+
+.right {
+    margin: auto;
+    position: relative;
 }
 
 .right h2 {
@@ -42,5 +52,8 @@ footer {
 
 .right img {
     margin-top: 20px;
-    height: 35rem;
+    height: 30rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
