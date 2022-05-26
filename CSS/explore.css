@@ -3,7 +3,7 @@
     position: relative;
     display: inline-block;
     margin-top: -5rem;
-    max-width: 45 rem;
+    max-width: 45rem;
 }
 
 .map-container img {
@@ -160,6 +160,39 @@ ul a:visited {
     color: black;
 }
 
-.right {
-    /* margin-top: -2rem; */
+@media screen and (max-width: 375px) {
+
+    html,
+    body {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .map-container {
+        display: inline-block;
+        position: relative;
+        margin-top: -5rem;
+        width: 100vw;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .map-container img {
+        width: 20rem;
+    }
+
+    .point {
+        width: 1rem;
+        height: 1rem;
+        position: absolute;
+
+    }
+
+    .vl {
+        display: none;
+    }
+
+
+
 }
