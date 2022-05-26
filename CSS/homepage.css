@@ -58,7 +58,7 @@ body {
   cursor: ew-resize; 
   width: 40px;
   height: 40px;
-  content: url(Icons/doubleArrow_brownfilled.svg);
+  content: url(images/arrowicon.png);
   border-radius: 50%;
 }
 
