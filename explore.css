@@ -3,11 +3,11 @@
     position: relative;
     display: inline-block;
     margin-top: -5rem;
-    max-width: 700px;
+    max-width: 45 rem;
 }
 
 .map-container img {
-    max-width: 801px;
+    max-width: 45rem;
 }
 
 .shelford {
@@ -154,19 +154,12 @@ a:hover {
 
 ul a {
     text-decoration: none;
-    decoration: none;
 }
 
 ul a:visited {
     color: black;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
 }
 
 .right {
     /* margin-top: -2rem; */
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }

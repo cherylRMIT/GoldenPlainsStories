@@ -4,43 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="explore.css">
-=======
     <link rel="icon" type="image/x-icon" href="./Images/GPS_LogoBookIcon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/styles.css">
     <link rel="stylesheet" href="./CSS/fonts.css">
     <link rel="stylesheet" href="./CSS/colours.css">
     <link rel="stylesheet" href="./CSS/grids.css">
-<body class="lightBG">
+    <link rel="stylesheet" href="explore.css">
+    <script src="search.js"></script>
+    <!-- Development -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.usmd.js"></script>
 
-=======
-<body class="lightBG">
-    <div class="navBar">
-        <div class="logo">
-            <a href="./index.html"><img src="./Images/GPS_LogoBookIcon.svg" alt=""></a>
-        </div>
-        <div class="nav">
-            <a href="./nav.html"><img src="./Images/Icons/hamburger_YellowOutline.svg" alt=""></a>
->>>>>>> Stashed changes
-        </div>
-    </div>
-    <div class="sidebar">
-        <div class="logo">
-            <img style="width: 50px;" src="Hamburger Icon.png" alt=""></div>
-        <h1>LOGO</h1>
-        <div class="socials">
-=======
-            <a href="https://www.facebook.com/" target=”_blank”><img class="icon"
-                    src="./Images/Icons/facebook_YellowOutline.svg" alt=""></a>
-            <a href="https://www.instagram.com/?hl=en" target=”_blank”><img class="icon"
-                    src="./Images/Icons/instagram_YellowOutline.svg" alt=""></a>
-=======
-    <script src="./script.js"></script>
-    <title>The Golden Plains Shire</title>
-</head>
+    <!-- Production -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="search.js"></script>
 
-<body class="fade-in lightBG">
+<body class="lightBG">
     <div class="navBar">
         <div class="logo">
             <a href="./goldenplains.html"><img src="./Images/GPS_LogoBookIcon.svg" alt=""></a>
@@ -49,8 +30,10 @@
             <a href="./nav.html"><img src="./Images/Icons/hamburger_YellowOutline.svg" alt=""></a>
         </div>
         <div class="socials">
-            <a href="https://www.facebook.com/" target=”_blank”><img class="icon" src="./Images/Icons/facebook_YellowOutline.svg" alt=""></a>
-            <a href="https://www.instagram.com/?hl=en" target=”_blank”><img class="icon" src="./Images/Icons/instagram_YellowOutline.svg" alt=""></a>
+            <a href="https://www.facebook.com/" target=”_blank”><img class="icon"
+                    src="./Images/Icons/facebook_YellowOutline.svg" alt=""></a>
+            <a href="https://www.instagram.com/?hl=en" target=”_blank”><img class="icon"
+                    src="./Images/Icons/instagram_YellowOutline.svg" alt=""></a>
         </div>
     </div>
 
@@ -64,9 +47,11 @@
                     <div class="map-container">
                         <img src="interactive map (gren).png" alt="Explore the Shire Map">
                         <div DATA-TIPPY-content="Bannockburn" class="point Bannockburn tippy" title="Bannockburn"></div>
-                        <div DATA-TIPPY-content="Batesford" class="point Batesford tippy" title="Batesford"></div>
+                        <div DATA-TIPPY-content="Batesford" class="point Batesford tippy" title="Batesford">
+                        </div>
                         <div DATA-TIPPY-content="Cape Clear/Illabrook/Rokewood Junction" class="point CapeClear tippy"
-                            title="Cape Clear/Illabrook/Rokewood Junction"></div>
+                            title="Cape Clear/Illabrook/Rokewood Junction">
+                        </div>
                         <div DATA-TIPPY-content="Dereel" class="point Dereel tippy" title="Dereel"></div>
                         <div DATA-TIPPY-content="Haddon" class="point Haddon tippy" title="Haddon"></div>
                         <div DATA-TIPPY-content="Inverleigh" class="point inverleigh tippy" title="inverleigh"></div>
@@ -126,35 +111,6 @@
             </div>
 
         </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate optio delectus et ipsa totam,
-                        itaque
-                        ut
-                        nemo maxime fuga minima omnis atque nihil, ab commodi dolore, animi corrupti magni ducimus
-                        laboriosam.
-                        Consequatur aliquam dicta recusandae, laboriosam ex, qui saepe accusantium inventore, eligendi
-                        quod
-                        aliquid
-                        quam ab quaerat odit nostrum corrupti praesentium quasi at pariatur? Culpa quis quisquam ipsum
-                        officiis,
-                        dolore veniam? Vero veniam perspiciatis nihil aperiam nesciunt neque sunt quis vel, tempore
-                        similique
-                        autem,
-                        ipsum a ratione architecto at natus sit, debitis ullam necessitatibus inventore. Amet placeat
-                        architecto
-                        pariatur voluptate suscipit aspernatur? Recusandae neque placeat autem aperiam, veniam libero
-                        voluptatibus.
-                    </p>
-                </div>
-                <div class="vl"></div>
-                <div class="right">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati atque laudantium, est incidunt
-                        saepe officiis magnam aspernatur veritatis, at, quisquam sunt recusandae! Provident ex numquam
-                        ipsum
-                        non sint excepturi, molestiae vel cumque quasi tempora maiores officiis quos quia dicta dolorem
-                        assumenda est obcaecati? Delectus aperiam, accusamus amet nemo maxime asperiores.</p>
-                </div>
-            </div>
-        </div>
     </div>
 
     <footer>
@@ -173,20 +129,13 @@
                         src="./Images/Icons/instagram_BrownOutline.svg" alt=""></a>
             </div>
         </div>
+        <p>© Golden Plains Shire 2022</p>
     </footer>
     <script>
         tippy(".tippy", {
             content: 'Global content',
         })
     </script>
-
-            <div class="socials">
-                <a href="https://www.facebook.com/" target=”_blank”><img class="icon" src="./Images/Icons/facebook_BrownOutline.svg" alt=""></a>
-                <a href="https://www.instagram.com/?hl=en" target=”_blank”><img class="icon" src="./Images/Icons/instagram_BrownOutline.svg" alt=""></a>
-            </div>
-        </div>
-        <p>© Golden Plains Shire 2022</p>
-    </footer>
     <script src="./script.js"></script>
 </body>
 
