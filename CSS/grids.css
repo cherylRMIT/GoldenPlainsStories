@@ -1,0 +1,285 @@
+/* Purpose: grid and margin layouts for desktop and mobile */
+
+/* Grid Guide: https://css-tricks.com/snippets/css/complete-guide-grid/ */
+
+/* DESKTOP GRID */
+body {
+   margin: 32px 64px 0px 160px;
+}
+
+.button {
+    padding: 16px 32px;
+    border-radius: 32px;
+}
+
+/* splash div block styling and fade in and out animation */ 
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #2E471D;
+    z-index: 200;
+    color: #F5DC9F;
+    text-align: center;
+    line-height: 50vh;
+    padding: 10vh 0vh;
+}
+
+.splash.display-none {
+    position: fixed;
+    opacity: 0; /* fades out the splash screeen */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #2E471D;
+    z-index: -10; /* places splash div behind all other content on the screen */
+    color: #F5DC9F;
+    text-align: center;
+    line-height: 50vh;
+    padding: 10vh 0vh;
+    transition: all 0.5s; /* smooth fade out */
+}
+
+.splash p { /* added padding for the text element in the splash scren, responsive for mobile by using vw */
+    padding: 0vw 10vw;
+}
+
+.splash img {
+    width: 50vw;
+}
+
+@keyframes fadeIn { /* keyframe animation for fading in elemnts */
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards; /* fade in element and retain final animation keyframe */
+}
+
+/* NAVIGATION BAR */
+.navBar {
+    height: 100vh;
+    width: 96px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #2E471D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar .logo {
+    margin-top: 24px;
+}
+
+.navBar .socials {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.navBar .logo img, .navBar .nav img, .navBar .socials img  {
+    width: 48px;
+}
+
+/* FOOTER */
+footer {
+    border-top-style: solid;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .links .sitemap {
+    width: 75vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .links .sitemap a {
+    text-decoration: none;
+    color: #201801;
+}
+
+footer .links .sitemap a:hover {
+    text-decoration: none;
+    color: #2E471D;
+}
+
+footer p {
+    color:#201801;
+}
+
+footer .socials {
+    display: none;
+}
+
+footer .socials img {
+    width: 48px;
+}
+
+.main {
+    margin-bottom: 64px;
+}
+
+/* MAIN NAVIGATION LINKS */
+.mainNav {
+    width: 100%;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Styling dropdown button */
+.dropdown-btn {
+    text-decoration: none;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    cursor: pointer;
+    text-align: left;
+    outline: none;
+}
+
+/* Active class for the dropdown button */
+.active {
+    color: #2E471D;
+}
+
+/* Dropdown container (hidden by default) */
+.dropdown-container {
+    display: none;
+    padding-left: 48px;
+}
+
+.dropdown-container a {
+    text-decoration: none;
+}
+
+.dropdown-container h3 {
+    text-decoration: none;
+    color: #201801;
+}
+
+.dropdown-container h3:hover {
+    text-decoration: none;
+    color: #2E471D;
+}
+
+.mainNav ul {
+    list-style-type: none;
+}
+
+.mainNav li{
+    margin-bottom: 48px;
+}
+
+.mainNav .dropdown-container li {
+    margin-bottom: 24px;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+
+/* MOBILE GRID */
+@media screen and (max-width: 375px) {
+    body {
+        margin: 106px 16px 0px 16px;
+    }
+
+    .button {
+        padding: 8px 16px;
+        border-radius: 16px;
+    }
+
+    /* NAVIGATION BAR */
+    .navBar {
+        width: 100vw;
+        height: 82px;
+        flex-direction: row;
+    }
+
+    .navBar .logo {
+        margin-left: 16px;
+        margin-top: 0px;
+    }
+
+    .navBar .nav {
+        margin-right: 16px;
+    }
+    
+    .navBar .socials {
+        display: none;
+    }
+    
+    .navBar .logo img, .navBar .nav img, .navBar .socials img  {
+        width: 40px;
+    }
+
+    /* FOOTER */
+    footer {
+        position: relative;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .links {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    footer .links .sitemap {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    footer .links .socials {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .links .socials img {
+        width: 40px;
+    }
+    
+    footer .socials {
+        display: none;
+    }
+    
+    footer .socials img {
+        width: 48px;
+    }
+
+    /* MAIN NAVIGATION */
+    .dropdown-container {
+        padding-left: 24px;
+    }
+
+    .mainNav li {
+        margin-bottom: 24px;
+    }
+
+    .mainNav .dropdown-container li {
+        margin-bottom: 16px;
+    }
+}
