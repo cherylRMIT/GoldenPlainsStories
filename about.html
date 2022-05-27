@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/colours.css">
-    <link rel="stylesheet" href="CSS/fonts.css">
+    <link rel="icon" type="image/x-icon" href="./Images/GPS_LogoBookIcon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/fonts.css">
+    <link rel="stylesheet" href="./CSS/colours.css">
+    <link rel="stylesheet" href="./CSS/grids.css">
+    <!-- <link rel="stylesheet" href="CSS/explore.css"> -->
     <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="CSS/grids.css">
-    <title>The Golden Plains Shire</title>
 </head>
 
-<body class="fade-in lightBG">
+<body class="lightBG">
     <div class="navBar">
         <div class="logo">
             <a href="./goldenplains.html"><img src="./Images/GPS_LogoBookIcon.svg" alt=""></a>
@@ -30,7 +32,9 @@
 
     <div class="main">
         <div class="content">
-            <h1>About</h1>
+            <div class="h1 center">
+                <h1>About</h1>
+            </div>
             <br>
 
             <div class="row">
@@ -67,19 +71,20 @@
                                 <p class="button"> Explore the Shire </p>
                             </a>
                         </div>
+                        <img src="thegoldenplainsshire.svg" alt="">
                     </div>
-                    <img src="thegoldenplainsshire.svg" alt="">
                 </div>
                 <div class="vl"></div>
                 <div class="right">
                     <h2>Credits</h2>
                     <img src="logos.svg" alt="">
+                    </ul>
                 </div>
             </div>
 
         </div>
-
     </div>
+
     <footer>
         <div class="links">
             <div class="sitemap">
@@ -98,7 +103,12 @@
         </div>
         <p>© Golden Plains Shire 2022</p>
     </footer>
-
+    <script>
+        tippy(".tippy", {
+            content: 'Global content',
+        })
+    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
