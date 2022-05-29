@@ -20,11 +20,10 @@ body {
     width: 100vw;
     height: 100vh;
     background: #2E471D;
-    z-index: 200;
-    color: #F5DC9F;
-    text-align: center;
-    line-height: 50vh;
-    padding: 10vh 0vh;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
 }
 
 .splash.display-none {
@@ -113,17 +112,16 @@ footer .links .sitemap {
 }
 
 footer .links .sitemap a {
-    text-decoration: none;
     color: #201801;
 }
 
 footer .links .sitemap a:hover {
-    text-decoration: none;
     color: #2E471D;
 }
 
 footer p {
     color:#201801;
+    text-align: center;
 }
 
 footer .socials {

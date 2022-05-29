@@ -283,4 +283,54 @@ text-align: center;
 
 /*END MODULAR TABS*/
 
+    flex-direction: column;
+    padding-top: 25px;
+  justify-content: space-around;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 600px;
+  text-align: center;
+  padding: 20px px;
+  cursor: pointer;
+    border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  align-items: center;
+  }
+
+
+  .tab {
+  cursor: pointer;
+  padding: 25px;
+  padding-right: 155px;
+  padding-left: 155px;
+  border: 4px solid #201801;
+  color: #201801;
+  }
+
+  .agriculture {
+
+  border-top-left-radius: 21px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 0px;
+  padding-right: 150px;
+  padding-left: 150px;
+  }
+
+  .food {
+
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 21px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 21px;
+  padding-left: 170px;
+  padding-right: 170px;
+  text-align: center;
+  }
+
+  /*END MODULAR TABS*/
 }
