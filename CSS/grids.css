@@ -3,8 +3,9 @@
 /* Grid Guide: https://css-tricks.com/snippets/css/complete-guide-grid/ */
 
 /* DESKTOP GRID */
-body {
-   margin: 32px 64px 0px 160px;
+*, body {
+    margin: 0;
+    padding: 0;
 }
 
 .button {
@@ -132,8 +133,50 @@ footer .socials img {
     width: 48px;
 }
 
+/* styling for main (inset) or full width content blocks*/
+
 .main {
-    margin-bottom: 64px;
+    margin: 32px 64px 32px 160px;
+    word-wrap: break-word; /* allows long words to be able to be broken and wrap onto the next line */
+}
+
+.fullwidth {
+    margin: 32px 0px 32px 96px;
+    word-wrap: break-word;
+}
+
+.fullwidth img {
+    width: 100%;
+}
+
+/* Township Page CSS */
+.townshipStats {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.townshipStats div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.townshipStats img {
+    width: 64px;
+}
+
+.townshipSummary {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    column-count: 2;
+}
+
+.townshipSummary img {
+    width: 100%;
+}
+
+.townshipTimeline {
+    height: 100vh;
 }
 
 /* MAIN NAVIGATION LINKS */
@@ -197,12 +240,62 @@ footer .socials img {
 /* MOBILE GRID */
 @media screen and (max-width: 375px) {
     body {
-        margin: 106px 16px 0px 16px;
+        margin-top: 106px;
     }
 
     .button {
         padding: 8px 16px;
         border-radius: 16px;
+    }
+
+    /* main (inset) and full width content blocks */
+
+    .main{
+        margin: 0px 16px 16px 16px;
+    }
+
+    .fullwidth {
+        margin: 0px 0px 16px 0px;
+    }
+
+
+    /* Township Page CSS */
+    .townshipStats {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .townshipStats div {
+        margin-top: 4px;
+        margin-bottom: 4px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .townshipStats img {
+        width: 32px;
+    }
+
+    .townshipStats p {
+        margin-left: 4px;
+    }
+
+    .townshipSummary {
+        margin-bottom: 16px;
+        column-count: 1;
+    }
+
+    .townshipSummary p {
+        margin-bottom: 16px;
+    }
+
+    .townshipSummary img {
+        width: 100%;
     }
 
     /* NAVIGATION BAR */
