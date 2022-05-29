@@ -27,6 +27,23 @@ body {
     padding: 60px;
 }
 
+.main h3 {
+
+  font-family: 'Bosch', 'Nanum Myeongjo', serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 50px;
+    line-height: 25px;
+}
+
+.homepageimage{
+
+  margin-bottom: 30px;
+  max-width: 100%;
+
+}
+
+
 /*SLIDER IMAGES*/ 
 
 .img-comp-container {
@@ -154,10 +171,16 @@ body {
 
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
 
     .main h1 {
         font-size: 2.5rem;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .main h2 {
+      font-size: 2.5rem;
         text-align: center;
         margin-left: 50px;
     }
@@ -195,10 +218,13 @@ body {
 
 
 /* MODULAR TABS*/
+
+
  
 .tabs {
 
   flex-direction: column;
+  flex-wrap: wrap;
   padding-top: 25px;
 justify-content: space-around;
 list-style-type: none;
@@ -232,8 +258,7 @@ border-top-left-radius: 21px;
 border-bottom-left-radius: 0px;
 border-top-right-radius: 21px;
 border-bottom-right-radius: 0px;
-padding-right: 150px;
-padding-left: 150px;
+
 }
 
 .food {
@@ -242,11 +267,15 @@ border-top-left-radius: 0px;
 border-bottom-left-radius: 21px;
 border-top-right-radius: 0px;
 border-bottom-right-radius: 21px;
-padding-left: 170px;
-padding-right: 170px;
 text-align: center;
+}
+
+.tab-content {
+  margin-top: 30rem;
+  text-align: left;
 }
 
 /*END MODULAR TABS*/
 
 }
+
