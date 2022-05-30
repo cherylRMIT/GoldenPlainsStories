@@ -27,28 +27,8 @@
 
 }
 
-.splash.display-none {
-    position: fixed;
-    opacity: 0; /* fades out the splash screeen */
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: #2E471D;
-    z-index: -10; /* places splash div behind all other content on the screen */
-    color: #F5DC9F;
-    text-align: center;
-    line-height: 50vh;
-    padding: 10vh 0vh;
-    transition: all 0.5s; /* smooth fade out */
-}
-
-.splash p { /* added padding for the text element in the splash scren, responsive for mobile by using vw */
-    padding: 0vw 10vw;
-}
-
 .splash img {
-    width: 50vw;
+    width: 33vw;
 }
 
 @keyframes fadeIn { /* keyframe animation for fading in elemnts */
