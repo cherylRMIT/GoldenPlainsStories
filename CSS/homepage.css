@@ -1,48 +1,15 @@
-*,
-body {
-    margin: 0;
-    padding: 0;
+.centre-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  word-wrap: break-word; 
 }
 
-
-.row {
-    margin-left: 20px;
-
-    
+.centre-container p {
+  text-align: center;
 }
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.centre{
-
-    text-align: center;
-}
-
-.centrebutton{
-
-    padding: 60px;
-}
-
-.main h6 {
-
-  font-family: 'Bosch', 'Nanum Myeongjo', serif;
-    font-size: 1rem;
-    text-align: center;
-    line-height: 20px;
-}
-
-.homepageimage{
-
- padding: 25px;
-
-}
-
-
-/*SLIDER IMAGES*/ 
+/* SLIDER IMAGES */ 
 
 .img-comp-container {
   /*adjustments for images and border*/
@@ -63,7 +30,6 @@ body {
 
 .img-comp-img img {
   display:block;
- 
 }
 
 .img-comp-slider {
@@ -76,22 +42,18 @@ body {
   content: url(images/arrowicon.png);
   border-radius: 50%;
 }
-
 /*END SLIDER IMAGES*/
 
-
-
 /* MODULAR TABS */
-
 .tabscont {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .tabscont ul{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%,0);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0);
 }
 
 [data-tab-content] {
@@ -103,23 +65,22 @@ body {
 }
 
 .tabs {
-    
   padding: 40px;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 800px;
-    text-align: center;
-    padding: 20px px;
-    cursor: pointer;
-      border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+  text-align: center;
+  padding: 20px px;
+  cursor: pointer;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 
@@ -133,7 +94,7 @@ body {
   
 }
 
- .agriculture {
+.agriculture {
 
   border-top-left-radius: 21px;
   border-bottom-left-radius: 21px;
@@ -142,7 +103,6 @@ body {
 }
 
 .food {
-
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
   border-top-right-radius: 21px;
@@ -152,7 +112,6 @@ body {
 }
 
 .language {
-
   padding-top: 30px;
 }
 
@@ -171,8 +130,6 @@ body {
 }
 
 /* END MODULAR TABS */  
-
-
 
 @media screen and (max-width: 414px) {
     .vl {
@@ -209,9 +166,6 @@ body {
      }
 
 /* MODULAR TABS*/
-
-
- 
 .tabs {
 
   flex-direction: column;
@@ -275,10 +229,7 @@ text-align: center;
   position: relative;
   height: 500px; 
   width: 100%;
-  border: 5px solid black;
-  
-  
-  
+  border: 5px solid black;  
 }
 
 .img-comp-img {
