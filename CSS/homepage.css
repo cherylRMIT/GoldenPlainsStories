@@ -324,7 +324,7 @@ text-align: center;
   cursor: ew-resize; 
   width: 40px;
   height: 40px;
-  content: url(images/arrowicon.png);
+  content: url(Images/Icons/arrow_browmFilled.svg);
   border-radius: 50%;
 }
 
