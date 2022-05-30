@@ -44,22 +44,13 @@ footer {
     justify-content: middle;
 }
 
-.right .logo1 {
-    margin-top: 20px;
-    height: 30rem;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-}
-
-.logo2 {
-    display: none;
-}
-
 .right .row {
     display: none;
 }
 
+.right img {
+    max-width: 100%;
+}
 
 
 @media screen and (max-width: 375px) {
@@ -119,9 +110,9 @@ footer {
 
     .right .row {
         display: inline;
-    }s
+    }
 
-    .logo2 {
+    s .logo2 {
         display: inline;
         max-width: 90vw;
     }
