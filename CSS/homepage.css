@@ -38,7 +38,6 @@ body {
 .homepageimage{
 
  padding: 25px;
-  max-width: 100%;
 
 }
 
@@ -224,6 +223,11 @@ body {
         margin-left: 65px;
     }
 
+    .homepageimage{
+
+      width: 100%;
+      height: auto;
+     }
 
 /* MODULAR TABS*/
 
