@@ -85,6 +85,7 @@ a {
         font-family: 'Bosch', 'Nanum Myeongjo', serif;
         font-size: 3.05rem;
         line-height: 48px;
+        text-align: center;
     }
 
     h2, .dropdown-btn {
