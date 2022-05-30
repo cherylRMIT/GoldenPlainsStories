@@ -1,0 +1,335 @@
+*,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+.row {
+    margin-left: 20px;
+
+    
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.centre{
+
+    text-align: center;
+}
+
+.centrebutton{
+
+    padding: 60px;
+}
+
+.main h6 {
+
+  font-family: 'Bosch', 'Nanum Myeongjo', serif;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 20px;
+}
+
+.homepageimage{
+
+ padding: 25px;
+
+}
+
+
+/*SLIDER IMAGES*/ 
+
+.img-comp-container {
+  /*adjustments for images and border*/
+  position: relative;
+  height: 500px; 
+  width: 100%;
+  border: 5px solid black;
+  
+  
+  
+}
+
+.img-comp-img {
+  position: absolute;
+  width: auto;
+  height: auto;
+  overflow:hidden;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.img-comp-img img {
+  display:block;
+ 
+}
+
+.img-comp-slider {
+  /*APPEARANCE OF THE SLIDER:*/
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize; 
+  width: 40px;
+  height: 40px;
+  content: url(images/arrowicon.png);
+  border-radius: 50%;
+}
+
+/*END SLIDER IMAGES*/
+
+
+
+/* MODULAR TABS */
+
+.tabscont {
+    width: 100%;
+    position: relative;
+}
+
+.tabscont ul{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+    
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  width: 800px;
+    text-align: center;
+    padding: 20px px;
+    cursor: pointer;
+      border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    
+}
+
+
+.tab {
+  cursor: pointer;
+  padding: 20px;
+  padding-right: 104px;
+  padding-left: 104px;
+  border: 4px solid #201801;
+ 
+  
+}
+
+ .agriculture {
+
+  border-top-left-radius: 21px;
+  border-bottom-left-radius: 21px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.food {
+
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 21px;
+  border-bottom-right-radius: 21px;
+  padding-left: 104px;
+  
+}
+
+.language {
+
+  padding-top: 30px;
+}
+
+.tab-content {
+  margin-top: 12rem;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.tab.active {
+  background: #CFEAFD;
+}
+
+.tab:hover {
+  background: #CFEAFD;
+}
+
+/* END MODULAR TABS */  
+
+
+
+@media screen and (max-width: 414px) {
+
+    .main h1 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .main h2 {
+      font-size: 2.5rem;
+        text-align: center;
+        margin-left: 50px;
+    }
+
+    .main {
+        background-color: #f5dc9f;
+    }
+
+    .vl {
+        display: none;
+        text-align: center;
+    }
+
+    .left {
+        padding: 10px;
+        width: 80%;
+        /* text-align: center; */
+        margin: 0 auto;
+        text-align: center;
+        margin-left: 65px;
+
+    }
+
+
+    .right {
+        /* width: 100%; */
+        padding: 10px;
+        width: 80%;
+        /* text-align: center; */
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 65px;
+    }
+
+    .homepageimage{
+
+      width: 100%;
+      height: auto;
+     }
+
+/* MODULAR TABS*/
+
+
+ 
+.tabs {
+
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 25px;
+justify-content: space-around;
+list-style-type: none;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+width: 600px;
+text-align: center;
+padding: 20px px;
+cursor: pointer;
+  border-top-left-radius: 25px;
+border-bottom-left-radius: 25px;
+border-top-right-radius: 25px;
+border-bottom-right-radius: 25px;
+align-items: center;
+}
+
+
+.tab {
+cursor: pointer;
+padding: 24px;
+padding-right: 150px;
+padding-left: 150px;
+border: 4px solid #201801;
+color: #201801;
+}
+
+.agriculture {
+
+border-top-left-radius: 21px;
+border-bottom-left-radius: 0px;
+border-top-right-radius: 21px;
+border-bottom-right-radius: 0px;
+
+}
+
+.food {
+
+border-top-left-radius: 0px;
+border-bottom-left-radius: 21px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 21px;
+text-align: center;
+}
+
+.tab-content {
+  margin-top: 20rem;
+  text-align: left;
+}
+
+/*END MODULAR TABS*/
+
+/*SLIDER IMAGES*/ 
+
+.img-comp-container {
+  /*adjustments for images and border*/
+  position: relative;
+  height: 500px; 
+  width: 100%;
+  border: 5px solid black;
+  
+  
+  
+}
+
+.img-comp-img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  overflow:hidden;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.img-comp-img img {
+  display:block;
+
+ 
+}
+
+.img-comp-slider {
+  /*APPEARANCE OF THE SLIDER:*/
+  position: absolute;
+  z-index:9;
+  cursor: ew-resize; 
+  width: 40px;
+  height: 40px;
+  content: url(Images/Icons/arrow_browmFilled.svg);
+  border-radius: 50%;
+}
+
+/*END SLIDER IMAGES*/
+
+
+}
+
