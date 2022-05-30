@@ -140,6 +140,10 @@
     margin-bottom: 5rem;
 }
 
+li a {
+    color: black;
+}
+
 @keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(245, 220, 159, 0.5);
@@ -189,17 +193,12 @@ ul a:visited {
     .map-container {
         padding: .3rem .3rem;
         position: relative;
-<<<<<<< Updated upstream
         display: inline-block;
         margin-top: -1rem;
         max-width: 20rem;
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0);
-=======
-        margin-top: -5rem;
-        width: 100vw;
->>>>>>> Stashed changes
     }
 
     .map-container img {
