@@ -164,6 +164,7 @@ footer .socials img {
     width: 100%;
     overflow-x: hidden;
     padding-top: 20px;
+    word-wrap: break-word;
 }
 
 /* Styling dropdown button */
