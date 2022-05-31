@@ -15,8 +15,10 @@
   /*adjustments for images and border*/
   position: relative;
   height: 500px; 
-  width: 100%;
+  width: 900px;
   border: 5px solid black;
+  left: 50%;
+  transform: translate(-50%,0);
 }
 
 .img-comp-img {
@@ -24,13 +26,15 @@
   width: auto;
   height: auto;
   overflow:hidden;
-  left: 50%;
-  transform: translate(-50%,0);
+  padding-left: 150px;
+
 }
 
 .img-comp-img img {
   display:block;
 }
+
+
 
 .img-comp-slider {
   /*APPEARANCE OF THE SLIDER:*/
@@ -39,7 +43,7 @@
   cursor: ew-resize; 
   width: 40px;
   height: 40px;
-  content: url(images/arrowicon.png);
+  content: url(../arrowicon.png);
   border-radius: 50%;
 }
 /*END SLIDER IMAGES*/
@@ -160,42 +164,32 @@
 
 /*SLIDER IMAGES*/ 
 
-.img-comp-container {
-  /*adjustments for images and border*/
-  position: relative;
-  height: 500px; 
-  width: 100%;
-  border: 5px solid black;  
+  .container {
+    width:100%;
+    padding:0 20px
+  }
+
+  img {
+
+    width: 300px;
+    height: 250px;
+    padding-top: 15px;
+  }
+
+  .img-comp-container {
+    /*adjustments for images and border*/
+    position: relative;
+    height: 300px; 
+    width: 100%;
+    border: 2px solid black;
+   
 }
 
 .img-comp-img {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  overflow:hidden;
-  left: 50%;
-  transform: translate(-50%,0);
-}
-
-.img-comp-img img {
-  display:block;
-
  
-}
-
-.img-comp-slider {
-  /*APPEARANCE OF THE SLIDER:*/
-  position: absolute;
-  z-index:9;
-  cursor: ew-resize; 
-  width: 40px;
-  height: 40px;
-  content: url(Images/Icons/arrow_browmFilled.svg);
-  border-radius: 50%;
-}
-
-/*END SLIDER IMAGES*/
-
+  padding-left: 50px;
 
 }
+}
+
 
