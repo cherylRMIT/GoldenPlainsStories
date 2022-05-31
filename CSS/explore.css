@@ -125,19 +125,25 @@
     animation: none;
     transform: translate(-50%, -50%) scale3D(1.35, 1.35, 1);
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    /* background-color: #CFEAFD; */
 }
 
 #myInput {
     /* text-align: center; */
     margin-top: .5rem;
-    border-radius: 5px;
+    border-radius: 10px;
     height: 1.2rem;
-    padding: .2rem;
+    width: 90%;
+    padding: .4rem;
     margin-bottom: .5rem;
 }
 
 .content {
     margin-bottom: 5rem;
+}
+
+li a {
+    color: black;
 }
 
 @keyframes pulse {
@@ -204,6 +210,20 @@ ul a:visited {
     .point {
         width: 1rem;
         height: 1rem;
+    }
+
+    .inverleigh {
+        margin-top: .5rem;
+    }
+
+    .napoleons {
+        margin-left: .2rem;
+        margin-top: -.3rem;
+    }
+
+    .Haddon {
+        top: 4%;
+        left: 32%;
     }
 
     footer {

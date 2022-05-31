@@ -44,20 +44,25 @@ footer {
     justify-content: middle;
 }
 
-.right .logo1 {
-    margin-top: 20px;
-    height: 30rem;
+.right .row {
+    display: none;
+}
+
+.right img {
+    max-width: 200px;
+    display: block;
+    margin: 40px;
+}
+
+.images {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
-.logo2 {
-    display: none;
-}
-
-.right .row {
-    display: none;
+.imgcenter {
+    position: relative;
+    width: 100%;
 }
 
 
@@ -70,13 +75,8 @@ footer {
         overflow-x: hidden;
     }
 
-    .center {
-        width: 100vw;
-        margin-left: -2.9rem;
-    }
-
-    footer {
-        margin-top: 15rem;
+    .images {
+        margin-top: -2rem;
     }
 
     .h1 {
@@ -87,23 +87,12 @@ footer {
         width: 100%;
     }
 
-    .left img {
+    .center img {
         width: 100vw;
     }
 
-    .logo1 {
-        display: none;
-    }
-
-    .logo2 {
-        /* display: inline; */
-        max-width: 90vw;
-        margin: -2rem 0 1rem 0;
-    }
-
-
     footer {
-        margin-top: -4rem;
+        margin-top: -2rem;
     }
 
     .column2 {
@@ -111,7 +100,7 @@ footer {
     }
 
     .right {
-        margin-top: 41rem;
+        margin-top: 38rem;
         margin-bottom: 6rem;
         max-width: 100%;
         position: relative;
@@ -119,7 +108,7 @@ footer {
 
     .right .row {
         display: inline;
-    }s
+    }
 
     .logo2 {
         display: inline;

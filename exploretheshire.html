@@ -51,41 +51,75 @@
                 <div class="left">
                     <div class="map-container">
                         <img src="interactive map (gren).png" alt="Explore the Shire Map">
-                        <div DATA-TIPPY-content="Bannockburn" class="point Bannockburn tippy" title="Bannockburn"></div>
-                        <div DATA-TIPPY-content="Batesford" class="point Batesford tippy" title="Batesford">
-                        </div>
-                        <div DATA-TIPPY-content="Cape Clear/Illabrook/Rokewood Junction" class="point CapeClear tippy"
-                            title="Cape Clear/Illabrook/Rokewood Junction">
-                        </div>
-                        <div DATA-TIPPY-content="Dereel" class="point Dereel tippy" title="Dereel"></div>
-                        <div DATA-TIPPY-content="Haddon" class="point Haddon tippy" title="Haddon"></div>
-                        <div DATA-TIPPY-content="Inverleigh" class="point inverleigh tippy" title="inverleigh"></div>
-                        <div DATA-TIPPY-content="Lethbridge" class="point Lethbridge tippy" title="Lethbridge"></div>
-                        <div DATA-TIPPY-content="Linton" class="point linton tippy" title="Linton"></div>
-                        </a>
-                        <a href="meredith.html">
-                            <div DATA-TIPPY-content="Meredith" class="point meredith tippy" title="Meredith"></div>
-                        </a>
-                        <a href="meredith.html">
-                            <div DATA-TIPPY-content="Napoleons" class="point Napoleons tippy" title="Napoleons"></div>
-                        </a>
-                        <a href="meredith.html">
-                            <div DATA-TIPPY-content="Rokewood/Corindhap" class="point rokewood tippy"
-                                title="rokewood/corindhap"></div>
-                        </a>
-                        <div DATA-TIPPY-content="Smythesdale" class="point smythesdale tippy" title="Smythesdale"></div>
-                        <a href="">
-                            <div DATA-TIPPY-content="Shelford" class="point Shelford tippy" title="Shelford"></div>
-                        </a>
-                        <a href="">
-                            <div DATA-TIPPY-content="Teesdale" class="point Teesdale tippy" title="Teesdale"></div>
-                        </a>
-                        <a href="">
-                            <div DATA-TIPPY-content="Scarsdale" class="point scarsdale tippy" title="Scarsdale">
+                        <a href="Townships/bannockburn.html">
+                            <div DATA-TIPPY-content="Bannockburn" id="Bannockburn" class="point Bannockburn tippy"
+                                title="Bannockburn">
                             </div>
                         </a>
-                        <a href="townships/steiglitz.html">
-                            <div DATA-TIPPY-content="Maude/Steiglitz/She Oaks" class="point Steiglitz tippy"
+                        <a href="Townships/batesford.html">
+                            <div DATA-TIPPY-content="Batesford" id="batesford" class="point Batesford tippy"
+                                title="Batesford">
+                            </div>
+                        </a>
+                        <a href="Townships/capeclear.html">
+                            <div DATA-TIPPY-content="Cape Clear/Illabrook/Rokewood Junction" id="capeclear"
+                                class="point CapeClear tippy" title="Cape Clear/Illabrook/Rokewood Junction">
+                            </div>
+                        </a>
+                        <a href="Townships/dereel.html">
+                            <div DATA-TIPPY-content="Dereel" class="point Dereel tippy" title="Dereel" id="dereel">
+                            </div>
+                        </a>
+                        <a href="Townships/haddon.html">
+                            <div DATA-TIPPY-content="Haddon" class="point Haddon tippy" title="Haddon" id="haddon">
+                            </div>
+                        </a>
+                        <a href="Townships/inverleigh.html">
+                            <div DATA-TIPPY-content="Inverleigh" class="point inverleigh tippy" title="inverleigh"
+                                id="inverleigh">
+                            </div>
+                        </a>
+                        <a href="Townships/lethbridge.html">
+                            <div DATA-TIPPY-content="Lethbridge" class="point Lethbridge tippy" title="Lethbridge"
+                                id="lethbridge">
+                            </div>
+                        </a>
+                        <a href="Townships/linton.html">
+                            <div DATA-TIPPY-content="Linton" class="point linton tippy" title="Linton" id="linton">
+                            </div>
+                        </a>
+                        <a href="Townships/meredith.html">
+                            <div DATA-TIPPY-content="Meredith" class="point meredith tippy" title="Meredith"
+                                id="meredith"></div>
+                        </a>
+                        <a href="Townships/napoleons.html">
+                            <div DATA-TIPPY-content="Napoleons" class="point Napoleons tippy" title="Napoleons"
+                                id="napoleons"></div>
+                        </a>
+                        <a href="Townships/rokewood.html">
+                            <div DATA-TIPPY-content="Rokewood/Corindhap" class="point rokewood tippy" id="rokewood"
+                                title="rokewood/corindhap"></div>
+                        </a>
+                        <a href="Townships/smythesdale.html">
+                            <div DATA-TIPPY-content="Smythesdale" class="point smythesdale tippy" title="Smythesdale"
+                                id="smythesdale">
+                            </div>
+                        </a>
+                        <a href="Townships/shelford.html">
+                            <div DATA-TIPPY-content="Shelford" class="point Shelford tippy" title="Shelford"
+                                id="shelford"></div>
+                        </a>
+                        <a href="Townships/teesdale.html">
+                            <div DATA-TIPPY-content="Teesdale" class="point Teesdale tippy" title="Teesdale"
+                                id="teesdale"></div>
+                        </a>
+                        <a href="Townships/scarsdale.html">
+                            <div DATA-TIPPY-content="Scarsdale" class="point scarsdale tippy" id="scarsdale"
+                                title="Scarsdale">
+                            </div>
+                        </a>
+                        <a href="Townships/maude.html">
+                            <div DATA-TIPPY-content="Maude/Steiglitz/She Oaks" class="point Steiglitz tippy" id="maude"
                                 title="Steiglitz"></div>
                         </a>
                     </div>
@@ -95,22 +129,39 @@
                     <h2 class="center">Find a Township</h2>
                     <input id="myInput" onkeyup="search()" type="text" placeholder="Search township...">
                     <ul id="myUL">
-                        <li><a href="" id="Bannockburn">Bannockburn</a></li>
-                        <li><a href="">Batesford</a></li>
-                        <li><a href="">Cape Clear/Illabrook/Rokewood Junction</a></li>
-                        <li><a href="">Dereel</a></li>
-                        <li><a href="">Haddon</a></li>
-                        <li><a href="">Inverleigh</a></li>
-                        <li><a href="">Lethbridge</a></li>
-                        <li><a href="">Linton</a></li>
-                        <li><a href="">Maude/Steiglitz/She Oaks</a></li>
-                        <li><a href="">Meredith</a></li>
-                        <li><a href="">Napoleons</a></li>
-                        <li><a href="">Rokewood/Corindhap</a></li>
-                        <li><a href="">Scarsdale</a></li>
-                        <li><a href="">Shelford</a></li>
-                        <li><a href="">Smythesdale</a></li>
-                        <li><a href="">Teesdale</a></li>
+                        <li><a onmouseleave="normal()" onmouseover="bannockburn()"
+                                href="Townships/bannockburn.html">Bannockburn</a></li>
+                        <li><a onmouseover="batesford()" onmouseleave="normal()"
+                                href="Townships/batesford.html">Batesford</a>
+                        </li>
+                        <li><a onmouseleave="normal()" onmouseover="capeclear()" href="Townships/capeclear.html">Cape
+                                Clear/Illabrook/Rokewood Junction</a></li>
+                        <li><a onmouseleave="normal()" onmouseover="dereel()" href="Townships/dereel.html">Dereel</a>
+                        </li>
+                        <li><a onmouseleave="normal()" onmouseover="haddon()" href="Townships/haddon.html">Haddon</a>
+                        </li>
+                        <li><a onmouseleave="normal()" onmouseover="inverleigh()"
+                                href="Townships/inverleigh.html">Inverleigh</a></li>
+                        <li><a onmouseleave="normal()" onmouseover="lethbridge()"
+                                href="Townships/lethbridge.html">Lethbridge</a></li>
+                        <li><a onmouseleave="normal()" onmouseover="linton()" href="Townships/linton.html">Linton</a>
+                        </li>
+                        <li><a onmouseleave="normal()" onmouseover="maude()"
+                                href="Townships/maude.html">Maude/Steiglitz/She Oaks</a></li>
+                        <li><a onmouseleave="normal()" onmouseover="meredith()"
+                                href="Townships/meredith.html">Meredith</a></li>
+                        <li><a onmouseleave="normal()" onmouseover="napoleons()"
+                                href="Townships/napoleons.html">Napoleons</a></li>
+                        <li><a onmouseleave="normal()" onmouseover="rokewood()"
+                                href="Townships/rokewood.html">Rokewood/Corindhap</a></li>
+                        <li><a onmouseleave="normal()" onmouseover="scarsdale()"
+                                href="Townships/scarsdale.html">Scarsdale</a></li>
+                        <li><a onmouseleave="normal()" onmouseover="shelford()"
+                                href="Townships/shelford.html">Shelford</a></li>
+                        <li><a onmouseleave="normal()" onmouseover="smythesdale()"
+                                href="Townships/smythesdale.html">Smythesdale</a></li>
+                        <li><a onmouseleave="normal()" onmouseover="teesdale()"
+                                href="Townships/teesdale.html">Teesdale</a></li>
                     </ul>
                 </div>
             </div>
@@ -146,6 +197,8 @@
         })
     </script>
     <script src="./script.js"></script>
+
+    <script src="mouseover.js"></script>
 </body>
 
 </html>
