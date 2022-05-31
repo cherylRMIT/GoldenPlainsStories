@@ -80,7 +80,7 @@ a {
 /*-----------------------------------------------------------------------------------------------*/
 
 /* MOBILE FONTS */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 414px) {
     h1 {
         font-family: 'Bosch', 'Nanum Myeongjo', serif;
         font-size: 3.05rem;
