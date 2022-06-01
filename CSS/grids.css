@@ -322,24 +322,17 @@ footer .socials img {
         width: auto;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     footer .links .socials {
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
 
     footer .links .socials img {
         width: 40px;
-    }
-    
-    footer .socials {
-        display: none;
-    }
-    
-    footer .socials img {
-        width: 48px;
     }
 
     /* MAIN NAVIGATION */
