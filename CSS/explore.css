@@ -188,9 +188,9 @@ ul a:visited {
 
     }
 
-    .center {
-        text-align: center;
-    }
+   h1 {
+       margin-left: 3.2rem;
+   }
 
     .map-container {
         padding: .3rem .3rem;
@@ -226,10 +226,6 @@ ul a:visited {
         left: 32%;
     }
 
-    footer {
-        margin-top: 15rem;
-    }
-
     h2 {
         margin-left: -6.3rem;
     }
@@ -250,4 +246,9 @@ ul a:visited {
         width: 10rem;
         border-radius: 5px;
     }
+
+    .footer {
+        margin-top: 14rem;
+    }
+
 }
