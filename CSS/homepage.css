@@ -27,6 +27,7 @@
   height: auto;
   overflow:hidden;
   padding-left: 150px;
+  padding-top: 20px;
 
 }
 
@@ -189,6 +190,11 @@
  
   padding-left: 50px;
 
+}
+
+.img {
+  width: 100%;
+  height: auto;
 }
 }
 
