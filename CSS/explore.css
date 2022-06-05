@@ -250,4 +250,8 @@ ul a:visited {
         width: 10rem;
         border-radius: 5px;
     }
+
+    .right {
+        margin-bottom: 10rem;
+    }
 }
